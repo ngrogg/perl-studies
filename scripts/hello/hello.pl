@@ -1,4 +1,10 @@
 #!/usr/bin/perl
 
-# Hello World 
-print "Hello World\n";
+# Function to run program
+sub runProgram {
+	# Output Hello World to console
+	print "Hello World\n";
+}
+
+# Run the function
+runProgram();
