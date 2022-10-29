@@ -9,13 +9,13 @@ sub runProgram {
 	### Check for apt
 	if (-e "/usr/bin/apt") {
 		print "Apt\n";
-		system("sudo apt update -y && sudo apt upgrade -y");
+		system("sudo apt update && sudo apt upgrade");
 	}
 	
 	### Check for yum
 	elsif (-e "/usr/bin/yum") {
 		print "Yum\n";
-		system("sudo yum update -y");
+		system("sudo yum update");
 	}
 
 	### Check for pacman
