@@ -10,12 +10,14 @@ sub runProgram {
 	if (-e "/usr/bin/apt") {
 		print "Apt\n";
 		system("sudo apt update && sudo apt upgrade");
+		system("sudo apt autoremove");
 	}
 	
 	### Check for yum
 	elsif (-e "/usr/bin/yum") {
 		print "Yum\n";
 		system("sudo yum update");
+		system("sudo yum autoremove");
 	}
 
 	### Check for pacman
