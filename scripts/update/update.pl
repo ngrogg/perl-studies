@@ -5,6 +5,10 @@
 
 # Function to run program
 sub runProgram {
+	## Check for distro agnostic package installs
+	### Flatpak
+	### Snap
+	
 	## Check for package managers
 	### Check for apt
 	if (-e "/usr/bin/apt") {
