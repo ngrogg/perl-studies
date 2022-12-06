@@ -7,7 +7,11 @@
 sub runProgram {
 	## Check for distro agnostic package installs
 	### Flatpak
+	#### Check if flatpak installed
+	#### If flatpak installed run update command 
 	### Snap
+	#### Check if snap installed
+	#### If snap installed run update command 
 	
 	## Check for package managers
 	### Check for apt
