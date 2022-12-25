@@ -55,7 +55,7 @@ sub runProgram {
 	elsif (-e "/usr/bin/zypper") {
 		print "zypper package manager detected\n";
 		print "-----------------------------------------\n";
-		system("sudo zypper update");
+		system("sudo zypper up");
 	}
 
 	### Else something else 
