@@ -67,6 +67,7 @@ sub runProgram {
 					###### Create user and add to wheel group
 					system("sudo useradd -m $username");
 					system("sudo usermod -a -G wheel $username");
+					system("sudo service pmpagent-bash-service restart");
 				}
 				else {
 					print "Not creating admin user $username\n";
@@ -85,6 +86,7 @@ sub runProgram {
 					print "----------------------------------------------------\n";
 					###### Create user
 					system("sudo useradd -m $username");
+					system("sudo service pmpagent-bash-service restart");
 				}
 				else {
 					print "Not creating regular user $username\n";
